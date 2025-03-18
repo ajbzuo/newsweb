@@ -11,18 +11,13 @@ A static news website with category-based navigation and featured articles, insp
 
 ### Installation
 
-1. Clone the repository to your local machine:
-```bash
-git clone <your-repository-url>
-cd <repository-name>
-```
 
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Start the development server:
+2. Start the development server:
 ```bash
 npm run dev
 ```
