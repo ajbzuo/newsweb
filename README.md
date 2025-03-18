@@ -1,13 +1,87 @@
-# news-website-ui
+# Time.com-inspired News Website
 
-This project is the UI of an anonymous **news website**. It is created with HTML, CSS and a bit of JS. JS is just for the preloader part.
+A static news website with category-based navigation and featured articles, inspired by Time.com.
 
-Its layout is designed with the combination of css-flex and css-grid.
+## Getting Started
 
-## site link
+### Prerequisites
 
-By [Clicking Me](https://msarmadqadeer.github.io/news-website-ui/) you'll see the live version of this project.
+- Node.js 20.x
+- npm (comes with Node.js)
 
-## screen
+### Installation
 
-![](./images/screen.png)
+1. Clone the repository to your local machine:
+```bash
+git clone <your-repository-url>
+cd <repository-name>
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5000`
+
+### Troubleshooting
+
+If you encounter any issues:
+
+1. Make sure Node.js version 20.x is installed:
+```bash
+node --version
+```
+
+2. Clear npm cache if you have dependency issues:
+```bash
+npm cache clean --force
+```
+
+3. If the server doesn't start, check if port 5000 is already in use:
+   - On Windows: `netstat -ano | findstr :5000`
+   - On Mac/Linux: `lsof -i :5000`
+
+4. For any other issues, try removing the node_modules folder and reinstalling:
+```bash
+rm -rf node_modules
+npm install
+```
+
+## Features
+
+- Category-based navigation (World, Business, Technology, Science, Health)
+- Featured articles on the homepage
+- Trending articles sidebar
+- Newsletter signup form
+- Responsive design
+- Article detail pages with full content
+- Category pages showing all articles in a category
+
+## Project Structure
+
+```
+├── client/
+│   ├── src/
+│   │   ├── components/   # React components
+│   │   ├── pages/       # Page components
+│   │   └── lib/         # Utilities and constants
+├── server/              # Express.js server
+├── shared/             # Shared types and schemas
+└── public/             # Static assets
+```
+
+## Built With
+
+- React
+- TypeScript
+- Express.js
+- Tailwind CSS
+- shadcn/ui
+- TanStack Query
+- Wouter (for routing)

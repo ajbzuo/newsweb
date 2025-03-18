@@ -1,0 +1,112 @@
+Last login: Tue Mar  4 16:09:16 on ttys000
+abalasubramaniam@abalasub-macOS NewsFilterPro % npm run
+Lifecycle scripts included in rest-express@1.0.0:
+  start
+    NODE_ENV=production node dist/index.js
+available via `npm run-script`:
+  dev
+    tsx server/index.ts
+  build
+    vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+  check
+    tsc
+  db:push
+    drizzle-kit push
+abalasubramaniam@abalasub-macOS NewsFilterPro % npm install
+npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+
+added 476 packages, and audited 477 packages in 14s
+
+60 packages are looking for funding
+  run `npm fund` for details
+
+9 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+abalasubramaniam@abalasub-macOS NewsFilterPro % npm run
+Lifecycle scripts included in rest-express@1.0.0:
+  start
+    NODE_ENV=production node dist/index.js
+available via `npm run-script`:
+  dev
+    tsx server/index.ts
+  build
+    vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+  check
+    tsc
+  db:push
+    drizzle-kit push
+abalasubramaniam@abalasub-macOS NewsFilterPro % npm install
+
+up to date, audited 477 packages in 2s
+
+60 packages are looking for funding
+  run `npm fund` for details
+
+9 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+abalasubramaniam@abalasub-macOS NewsFilterPro % npm run dev
+
+> rest-express@1.0.0 dev
+> tsx server/index.ts
+
+node:events:496
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen ENOTSUP: operation not supported on socket 0.0.0.0:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1973:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'ENOTSUP',
+  errno: -45,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 5000
+}
+
+Node.js v22.14.0
+abalasubramaniam@abalasub-macOS NewsFilterPro % node -version
+node: bad option: -version
+abalasubramaniam@abalasub-macOS NewsFilterPro % node -v
+v22.14.0
+abalasubramaniam@abalasub-macOS NewsFilterPro % npm start
+
+> rest-express@1.0.0 start
+> NODE_ENV=production node dist/index.js
+
+node:internal/modules/cjs/loader:1228
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/abalasubramaniam/Downloads/NewsFilterPro/dist/index.js'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function._load (node:internal/modules/cjs/loader:1055:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.14.0
+abalasubramaniam@abalasub-macOS NewsFilterPro % 
