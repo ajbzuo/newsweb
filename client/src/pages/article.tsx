@@ -33,14 +33,14 @@ export default function ArticlePage() {
               className="object-cover w-full h-full rounded-lg"
             />
           </div>
-          <!-- ZEPHR_FEATURE article -->
-          <div className="prose prose-lg max-w-none">
-            {article.content.split('\n').map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
-            ))}
-          </div>
-          <!-- ZEPHR_FEATURE_END article -->
-        </article>
+          {/* ZEPHR_FEATURE article */}
+<div className="prose prose-lg max-w-none">
+  {article.content.split('\n').map((paragraph, index) => (
+    <p key={index}>{paragraph}</p>
+  ))}
+</div>
+{/* ZEPHR_FEATURE_END article */}
+          
         
         <div className="space-y-8">
           <TrendingSidebar />
