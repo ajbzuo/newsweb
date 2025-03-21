@@ -20,6 +20,7 @@ export default function ArticlePage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid lg:grid-cols-3 gap-8">
+        {/* ZEPHR_FEATURE article */}
         <article className="lg:col-span-2">
           <h1 className="text-4xl font-bold mb-4">{article.title}</h1>
           <div className="text-sm text-muted-foreground mb-6">
@@ -33,14 +34,14 @@ export default function ArticlePage() {
               className="object-cover w-full h-full rounded-lg"
             />
           </div>
-          {/* ZEPHR_FEATURE article */}
-<div className="prose prose-lg max-w-none">
-  {article.content.split('\n').map((paragraph, index) => (
-    <p key={index}>{paragraph}</p>
-  ))}
-</div>
-{/* ZEPHR_FEATURE_END article */}
           
+          <div className="prose prose-lg max-w-none">
+            {article.content.split('\n').map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </article>
+        {/* ZEPHR_FEATURE_END article */}
         
         <div className="space-y-8">
           <TrendingSidebar />
